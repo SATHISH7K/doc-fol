@@ -1,0 +1,9 @@
+mkdir sat
+cd sat
+touch index.html
+notepad index.html
+touch dockerfile
+notepad dockerfile
+docker build -t sat .
+docker run -d -p 8080:80 sat
+docker ps

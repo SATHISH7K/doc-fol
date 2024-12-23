@@ -1,0 +1,5 @@
+docker build -t python313-sat .
+docker run python313-sat
+docker login
+docker tag python313-sat kottidisathish1234/python313-sat
+docker push kottidisathish1234/python313-sat
